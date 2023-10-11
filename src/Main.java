@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,6 +7,14 @@ public class Main {
         for (Flowers printable : flowers) {
             printable.print();
         }
+        System.out.println("Введите название цветов");
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        System.out.println("Введите параметры цветов");
+        Scanner flowerss = new Scanner(System.in);
+        String parametres = scanner.nextLine();
+        System.out.println("Название цветка: " + name);
+        System.out.println("Параметры цветка: " + parametres);
     }
     public static Flowers createObject(String className) {
         Flowers flowers = null;
